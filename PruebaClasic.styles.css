@@ -1,0 +1,400 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+/* ===== BASE ===== */
+.page[b-geof5q65vt] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #020617;
+    color: #e5e7eb;
+}
+
+main[b-geof5q65vt] {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #020617;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar[b-geof5q65vt] {
+    background-image: linear-gradient(
+        180deg,
+        rgb(94, 129, 145) 0%,
+        #021620 70%
+    );
+}
+
+/* ===== TOP BAR ===== */
+.top-row[b-geof5q65vt] {
+    background-color: #020617;
+    border-bottom: 1px solid #111827;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* links top bar */
+.top-row[b-geof5q65vt]  a,
+.top-row[b-geof5q65vt]  .btn-link {
+    color: #9ca3af;
+    white-space: nowrap;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+
+.top-row[b-geof5q65vt]  a:hover,
+.top-row[b-geof5q65vt]  .btn-link:hover {
+    color: #e5e7eb;
+    text-decoration: underline;
+}
+
+.top-row[b-geof5q65vt]  a:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ===== CONTENT ===== */
+article.content[b-geof5q65vt] {
+    flex: 1;
+    background-color: #020617;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 640.98px) {
+    .top-row[b-geof5q65vt] {
+        justify-content: space-between;
+    }
+
+    .top-row[b-geof5q65vt]  a,
+    .top-row[b-geof5q65vt]  .btn-link {
+        margin-left: 0;
+    }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 641px) {
+    .page[b-geof5q65vt] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-geof5q65vt] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-geof5q65vt] {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .top-row.auth[b-geof5q65vt]  a:first-child {
+        flex: 1;
+        text-align: right;
+        width: 0;
+    }
+
+    .top-row[b-geof5q65vt],
+    article.content[b-geof5q65vt] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* /Layout/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-58srm7n8nt] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-58srm7n8nt] {
+    min-height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-58srm7n8nt] {
+    font-size: 1.1rem;
+}
+
+.bi[b-58srm7n8nt] {
+    display: inline-block;
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+    top: -1px;
+    background-size: cover;
+}
+
+.bi-house-door-fill-nav-menu[b-58srm7n8nt] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-house-door-fill' viewBox='0 0 16 16'%3E%3Cpath d='M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z'/%3E%3C/svg%3E");
+}
+
+.bi-plus-square-fill-nav-menu[b-58srm7n8nt] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus-square-fill' viewBox='0 0 16 16'%3E%3Cpath d='M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z'/%3E%3C/svg%3E");
+}
+
+.bi-list-nested-nav-menu[b-58srm7n8nt] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list-nested' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+}
+
+.nav-item[b-58srm7n8nt] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-58srm7n8nt] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-58srm7n8nt] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-58srm7n8nt]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-58srm7n8nt]  a.active {
+    background-color: rgba(255,255,255,0.37);
+    color: white;
+}
+
+.nav-item[b-58srm7n8nt]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-58srm7n8nt] {
+        display: none;
+    }
+
+    .collapse[b-58srm7n8nt] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+
+    .nav-scrollable[b-58srm7n8nt] {
+        /* Allow sidebar to scroll for tall menus */
+        height: calc(100vh - 3.5rem);
+        overflow-y: auto;
+    }
+}
+/* /Pages/Home.razor.rz.scp.css */
+/* --- BASE & LAYOUT --- */
+.landing-wrapper[b-iq5v4iphav] {
+    background: #020617;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* --- HERO --- */
+.hero[b-iq5v4iphav] {
+    height: 45vh;
+    background-image: linear-gradient(rgba(2, 6, 23, 0.4), #020617), 
+                      url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1920");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay h1[b-iq5v4iphav] {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    margin: 0;
+}
+
+/* --- CONTENEDOR DE TARJETAS --- */
+.content[b-iq5v4iphav] {
+    max-width: 1200px;
+    margin: -60px auto 0;
+    padding: 0 20px 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.cards-container[b-iq5v4iphav] {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* =========================================
+   --- ESTILO UNIFICADO PARA TODAS LAS CARDS ---
+   ========================================= */
+
+.dolar-card[b-iq5v4iphav], .gecko-card[b-iq5v4iphav] {
+    background: #0f172a; 
+    border: 1px solid #1e293b; 
+    border-radius: 14px;
+    padding: 30px 24px;
+    width: 380px; /* Aumentado un poco para que respire el contenido grande */
+    min-height: 320px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    cursor: default;
+    overflow: hidden; 
+    position: relative;
+}
+
+.dolar-card:hover[b-iq5v4iphav], .gecko-card:hover[b-iq5v4iphav] { transform: translateY(-5px); }
+.dolar-blue-card:hover[b-iq5v4iphav] { border-color: #3b82f6; box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2); }
+.dolar-oficial-card:hover[b-iq5v4iphav] { border-color: #22c55e; box-shadow: 0 15px 35px rgba(34, 197, 94, 0.2); }
+.gecko-card:hover[b-iq5v4iphav] { border-color: #38f2af; box-shadow: 0 15px 35px rgba(56, 242, 175, 0.2); }
+
+/* --- DISEÑO INTERNO PROFUNDO (::DEEP) --- */
+
+.dolar-card[b-iq5v4iphav]  .component-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Título de la tarjeta (Dólar Blue / Oficial) */
+.dolar-card[b-iq5v4iphav]  h3 {
+    font-size: 1.4rem !important;
+    margin-bottom: 15px !important;
+    color: #94a3b8;
+    letter-spacing: 4px !important;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Texto VENTA */
+.dolar-card[b-iq5v4iphav]  .label {
+    font-size: 1.2rem;
+    color: #3b82f6; 
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.dolar-oficial-card[b-iq5v4iphav]  .label { color: #22c55e; }
+
+/* EL PRECIO GIGANTE */
+.dolar-card[b-iq5v4iphav]  .precio {
+    font-size: 4.5rem !important; /* Ajustado para que no rompa la card */
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 0.9;
+    display: block;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -2px;
+}
+
+/* --- SECCIÓN INFERIOR AGRANDADA --- */
+.dolar-card[b-iq5v4iphav]  .footer-info {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column; /* En columna para que sea más grande y claro */
+    gap: 8px;
+    width: 100%;
+}
+
+/* Texto de Compra */
+.dolar-card[b-iq5v4iphav]  .compra-label {
+    font-size: 1.5rem; /* ¡Ahora sí está aquí! */
+    color: #cbd5e1; 
+    font-weight: 600;
+}
+
+/* Texto de Actualización / Referencia */
+.dolar-card[b-iq5v4iphav]  .update {
+    font-size: 1rem;
+    color: #64748b;
+    font-weight: 400;
+    opacity: 1 !important; /* Que se vea bien */
+}
+
+/* --- GECKO & FOOTER --- */
+gecko-coin-ticker-widget[b-iq5v4iphav] { display: block; background-color: transparent !important; width: 100%; }
+.widget-container[b-iq5v4iphav] { width: 100%; min-height: 100px; display: flex; justify-content: center; }
+.footer-minimal[b-iq5v4iphav] { padding: 60px 20px 40px; }
+.line[b-iq5v4iphav] { max-width: 800px; height: 1px; background: linear-gradient(to right, transparent, #1e293b, transparent); margin: 0 auto 30px; }
+.footer-grid[b-iq5v4iphav] { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; color: #64748b; font-size: 0.8rem; }
+.brand[b-iq5v4iphav] { display: flex; align-items: center; gap: 8px; }
+.dot[b-iq5v4iphav] { width: 6px; height: 6px; background: #38f2af; border-radius: 50%; }
+.name[b-iq5v4iphav] { font-weight: 600; color: #f8fafc; }
+
+.chart-page-container[b-iq5v4iphav] {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.chart-header[b-iq5v4iphav] {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.chart-header h2[b-iq5v4iphav] {
+    color: #f8fafc;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.chart-header p[b-iq5v4iphav] {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+.chart-wrapper[b-iq5v4iphav] {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+/* --- AJUSTES PARA CELULARES --- */
+@media (max-width: 768px) {
+    /* Ajustamos el tamaño del título en el Hero */
+    .hero-overlay h1[b-iq5v4iphav] {
+        font-size: 1.8rem; /* Tamaño más pequeño para que entre en una línea */
+        text-align: center;
+        padding: 0 20px;
+        line-height: 1.2;
+    }
+
+    /* Opcional: Ajustamos el margen superior de las tarjetas 
+       para que no queden tan pegadas al título en el celu */
+    .content[b-iq5v4iphav] {
+        margin-top: -30px; 
+    }
+
+    /* Aseguramos que las tarjetas ocupen el ancho disponible sin salirse */
+    .dolar-card[b-iq5v4iphav], .gecko-card[b-iq5v4iphav] {
+        width: 100%; 
+        max-width: 350px;
+    }
+
+    /* Achicamos un poco el precio gigante solo en celu para que no se corte */
+    .dolar-card[b-iq5v4iphav]  .precio {
+        font-size: 3.8rem !important;
+    }
+}
